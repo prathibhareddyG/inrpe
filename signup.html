@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    .container{
+      margin-top: 10%;
+    }
+    input{
+      
+      margin-bottom: 10%;
+    }
+  </style>
+</head>
+<body> 
+ 
+<div class="container">
+  
+   
+      <div class="row justify-content-center">
+      <div class="col-4 p-3 mb-2 bg-success text-dark">
+          <label><b><strong style="font-size: 20px">Benfits of Inrpe Account</strong></b></label><br><br>
+            <div class="row">
+                <div class="col-4">
+                   <label class="fa fa-credit-card" style="font-size:48px"></label>
+                </div>
+                <div class="col-8">
+                      <label><strong style="font-size: 15px">Fast and Secure Payments</strong></label><br><br><br><br><br><br><br> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <i class="fa fa-mobile-phone" style="font-size:48px"></i>
+                </div>
+                <div class="col-8">
+                    <label><strong style="font-size: 15px">Pay utility bills or Mobile recharge and get cashbacks</strong></label><br><br><br><br><br><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                  <i class="fa fa-tag" style="font-size:48px"></i>
+                </div>
+                <div class="col-8">
+                  <label><strong style="font-size: 15px">Amazing deals on Travel,Movies and Shoppings</strong></label><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 p-3 mb-2 bg-info text-dark">
+          <form action="/action_page.php">
+            <center><label><strong style="font-size: 25px">Signup</strong></label></center><hr>
+             <div class="form-group">
+              <label for="uname"><strong style="font-size: 10px">Name:</strong></label>
+              <input type="name" class="form-control" id="uname">
+            </div>
+            <div class="form-group">
+              <label for="emailid"><strong style="font-size: 10px">Email address:</strong></label>
+              <input type="email" class="form-control" id="emailid">
+            </div>
+            <div class="form-group">
+              <label for="pass"><strong style="font-size: 10px">password:</strong></label>
+              <input type="password" class="form-control" id="pass">
+            </div>
+            <label id="NO"><strong style="font-size: 10px">Telephone NO:</strong></label>
+           <input type="Comments" class="form-control" id="NO">
+            <div class="checkbox">
+              <label><input type="checkbox"> <strong style="font-size: 10px">Remember me</strong></label>
+            </div>
+
+            <center><button type="submit" class="btn btn-success btn-block">Submit</button></center>
+          </form>
+        </div>
+      </div>
+    
+  
+</div>
+
+</body>
+<script type="text/javascript">
+  function validationform()
+{
+  var a = document.form.uname.value;
+if(a=="")
+{
+alert("Please Enter Your userName");
+document.form.uname.focus();
+return false;
+}
+if(!isNaN(a))
+{
+alert("Please Enter Only Characters in user name");
+document.form.uname.select();
+return false;
+}
+if ((a.length < 5) || (a.length > 15))
+{
+alert("user name Character must be 5 to 15 Character");
+document.form.uname.select();
+return false;
+}
+
+    var email = document.form.emailid;
+    if (email.value == "")
+    {
+    window.alert("Please enter a valid e-mail address.");
+    email.focus();
+    return false;
+    }else
+    if (email.value.indexOf("@", 0) < 0)
+    {
+    window.alert("Please enter a valid e-mail address.");
+    email.focus();
+    return false;
+    }else
+    if (email.value.indexOf(".", 0) < 0)
+    {
+    window.alert("Please enter a valid e-mail address.");
+    email.focus();
+    return false;
+    }
+var a = document.form.pass.value;
+if(a=="")
+{
+alert("Please Enter Your Password");
+document.form.pass.focus();
+return false;
+}
+if ((a.length < 4) || (a.length > 8))
+{
+alert("Your Password must be 4 to 8 Character");
+document.form.pass.select();
+return false;
+}
+}
+</script>
+</html>
